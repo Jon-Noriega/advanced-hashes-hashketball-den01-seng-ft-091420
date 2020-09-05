@@ -288,7 +288,7 @@ max_steals_player = ""
 game_hash.each do |team,attributes|
   attributes[:players].each do |player_stats|
     if player_stats[:steals] > max_steals
-      max_steals = player_stats[:points]
+      max_steals = player_stats[:steals]
       max_points_player = player_stats[:player_name]
       end
     end
