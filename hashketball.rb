@@ -293,10 +293,9 @@ game_hash.each do |team,attributes|
       end
     end
   end
-  max_steals_player
-  binding.pry
+  
 end
 
-most_steals
+long_name_steals_a_ton
 
   
