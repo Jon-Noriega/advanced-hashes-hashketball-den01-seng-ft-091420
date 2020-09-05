@@ -293,7 +293,7 @@ game_hash.each do |team,attributes|
       end
     end
   end
-  max_points_player
+  max_steals_player
 end
 
 most_points_scored
