@@ -280,4 +280,20 @@ player_with_longest_name
 
 # Write a method that returns true if the player with the longest name had the most steals. Call the method long_name_steals_a_ton?
 
+def most_steals_scored()
 
+max_points = 0
+max_points_player = ""
+
+game_hash.each do |team,attributes|
+  attributes[:players].each do |player_stats|
+    if player_stats[:points] > max_points
+      max_points = player_stats[:points]
+      max_points_player = player_stats[:player_name]
+      end
+    end
+  end
+  max_points_player
+end
+
+most_points_scored
