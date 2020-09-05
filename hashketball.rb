@@ -194,6 +194,7 @@ end
 def big_shoe_rebounds()
   big_foot = 0
   big_foot_boards = 0
+  big_foot_name = ""
   
   game_hash.each do |home_away,team_info|
     team_info[:players].each do |stats|
