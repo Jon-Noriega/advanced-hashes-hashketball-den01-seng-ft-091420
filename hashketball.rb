@@ -301,6 +301,7 @@ most_steals
 
 def long_name_steals_a_ton()
   player_with_longest_name == most_steals?
+  binding.pry
 end
   
   
