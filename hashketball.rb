@@ -201,6 +201,7 @@ def big_shoe_rebounds()
       if stats[:shoe] > big_foot
         big_foot = stats[:shoe]
         big_foot_boards = stats[:rebounds]
+        big_foot_name = stats[:player_name]
       end
     end
   end
