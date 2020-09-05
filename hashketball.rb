@@ -293,19 +293,6 @@ game_hash.each do |team,attributes|
       end
     end
   end
-
-longest_name_characters = 0
-longest_name_player = ""
-
-game_hash.each do |team,attributes|
-  attributes[:players].each do |player_stats|
-    if player_stats[:player_name].length > longest_name_characters
-      longest_name_characters = player_stats[:player_name].length
-      longest_name_player = player_stats[:player_name]
-      end
-    end
-  end
-  binding.pry
 end
 
 long_name_steals_a_ton
