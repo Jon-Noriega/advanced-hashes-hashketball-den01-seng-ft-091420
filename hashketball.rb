@@ -281,6 +281,18 @@ player_with_longest_name
 
 def long_name_steals_a_ton()
 
+longest_name_characters = 0
+longest_name_player = ""
+
+game_hash.each do |team,attributes|
+  attributes[:players].each do |player_stats|
+    if player_stats[:player_name].length > longest_name_characters
+      longest_name_characters = player_stats[:player_name].length
+      longest_name_player = player_stats[:player_name]
+      end
+    end
+  end
+
 max_steals = 0
 max_steals_player = ""
 
