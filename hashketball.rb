@@ -254,6 +254,7 @@ game_hash.each do |team,attributes|
   else winner = "Charlotte Hornets"
   end
   winner
+  binding.pry
 end
 
 winning_team
