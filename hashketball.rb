@@ -225,6 +225,7 @@ game_hash.each do |team,attributes|
     end
   end
   max_points_player
+  binding.pry
 end
 
 most_points_scored
