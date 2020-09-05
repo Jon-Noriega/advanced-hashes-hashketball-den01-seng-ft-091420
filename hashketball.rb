@@ -305,6 +305,7 @@ game_hash.each do |team,attributes|
       end
     end
   end
+  
 end
 
 long_name_steals_a_ton
