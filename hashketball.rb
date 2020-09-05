@@ -298,11 +298,11 @@ end
 most_steals
 
 
-def long_name_steals_a_ton()
-  if player_with_longest_name == most_steals
-    "true"
-  binding.pry
-end
+# def long_name_steals_a_ton()
+#   if player_with_longest_name == most_steals
+#     "true"
+#   binding.pry
+# end
   
   
   
