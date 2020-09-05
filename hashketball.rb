@@ -304,7 +304,7 @@ game_hash.each do |team,attributes|
       end
     end
   end
-  
+  longest_name_player == max_steals_player
   binding.pry
 end
 
