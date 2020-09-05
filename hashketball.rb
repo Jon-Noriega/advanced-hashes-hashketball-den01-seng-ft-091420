@@ -206,3 +206,74 @@ def big_shoe_rebounds()
   big_foot_boards
 end
 
+
+# Which player has the most points? Call the method most_points_scored.
+
+def most_points_scored()
+
+max_points = 0
+max_points_player = ""
+
+game_hash.each do |team,attributes|
+  attributes[:players].each do |player_stats|
+    if player_stats[:points] > max_points
+      max_points = player_stats[:points]
+      max_points_player = player_stats[:player_name]
+      end
+    end
+  end
+  max_points_player
+end
+
+most_points_scored
+
+# Which team has the most points? Call the method winning_team.
+
+def winning_team()
+
+home_array = []
+away_array = []
+
+game_hash.each do |team,attributes|
+  attributes[:players].each do |player_stats|
+    
+    if attributes[:team_name] == "Brooklyn Nets"
+    home_array << player_stats[:points]
+    
+    else
+    away_array << player_stats[:points]
+    
+  
+      end
+    end
+  end
+  if home_array.reduce(0){|total,num| total + num} > away_array.reduce(0){|total,num| total + num}
+  winner = "Brooklyn Nets"
+  else winner = "Charlotte Hornets"
+  end
+  winner
+end
+
+winning_team
+
+# Which player has the longest name? Call the method player_with_longest_name.
+
+def player_with_longest_name()
+
+longest_name_characters = 0
+longest_name_player = ""
+
+game_hash.each do |team,attributes|
+  attributes[:players].each do |player_stats|
+    if player_stats[:player_name].length > longest_name_characters
+      longest_name_characters = player_stats[:player_name].length
+      longest_name_player = player_stats[:player_name]
+      end
+    end
+  end
+  longest_name_player
+  binding.pry
+end
+
+player_with_longest_name
+
