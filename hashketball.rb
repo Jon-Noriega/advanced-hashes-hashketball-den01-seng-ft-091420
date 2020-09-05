@@ -274,7 +274,6 @@ game_hash.each do |team,attributes|
     end
   end
   longest_name_player
-  binding.pry
 end
 
 player_with_longest_name
