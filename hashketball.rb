@@ -308,5 +308,3 @@ game_hash.each do |team,attributes|
 end
 
 long_name_steals_a_ton
-
-binding.pry
