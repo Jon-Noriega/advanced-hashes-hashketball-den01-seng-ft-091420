@@ -283,7 +283,7 @@ player_with_longest_name
 def most_steals()
 
 max_steals = 0
-max_points_player = ""
+max_steals_player = ""
 
 game_hash.each do |team,attributes|
   attributes[:players].each do |player_stats|
